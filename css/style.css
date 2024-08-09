@@ -251,3 +251,9 @@ body {
   width: 100%;
   border-radius: 5%;
   }
+
+@media only screen and (max-width: 1920px) {
+  body {
+    background-color: #f2f2f2;
+  }
+}
