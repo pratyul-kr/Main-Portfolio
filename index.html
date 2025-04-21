@@ -54,19 +54,19 @@
       </section>
       
       <nav id="lowerNav" class="fixed bottom-0 w-full flex justify-between items-center bg-[#F9FAFB] dark:bg-[#000000] border-t border-[#E5E7EB] dark:border-[#1A1A1A] px-4 py-2 transition-transform duration-300 ease-in-out">
-        <button id="homeBtn" class="navBtn flex flex-col items-center justify-center w-full transition-transform duration-200">
+        <button id="homeBtn" class="navBtn flex flex-col items-center justify-center w-full transition-transform duration-300 ease-in-out">
           <span class="material-symbols-rounded lgIcon py-1 px-5 rounded-full bg-[#5865F2] text-[#F9FAFB] material-fill">home</span>
           <span class="text-sm font-medium">Home</span>
         </button>
-        <button id="blogsBtn" class="navBtn flex flex-col items-center justify-center w-full transition-transform duration-200">
+        <button id="blogsBtn" class="navBtn flex flex-col items-center justify-center w-full transition-transform duration-300 ease-in-out">
           <span class="material-symbols-rounded lgIcon py-1 px-5 rounded-full">article</span>
           <span class="text-sm font-medium">Blogs</span>
         </button>
-        <button id="projectsBtn" class="navBtn flex flex-col items-center justify-center w-full transition-transform duration-200">
+        <button id="projectsBtn" class="navBtn flex flex-col items-center justify-center w-full transition-transform duration-300 ease-in-out">
           <span class="material-symbols-rounded lgIcon py-1 px-5 rounded-full">grid_view</span>
           <span class="text-sm font-medium">Projects</span>
         </button>
-        <button id="contactBtn" class="navBtn flex flex-col items-center justify-center w-full transition-transform duration-200">
+        <button id="contactBtn" class="navBtn flex flex-col items-center justify-center w-full transition-transform duration-300 ease-in-out">
           <span class="material-symbols-rounded lgIcon py-1 px-5 rounded-full">person</span>
           <span class="text-sm font-medium">Contact</span>
         </button>
@@ -347,10 +347,10 @@
       
         const newActiveBtn = document.getElementById(activeId);
         if (newActiveBtn !== activeBtn) {
-          newActiveBtn.classList.add('scale-85');
+          newActiveBtn.classList.add('scale-115');
           setTimeout(() => {
-            newActiveBtn.classList.remove('scale-85');
-          }, 200);
+            newActiveBtn.classList.remove('scale-115');
+          }, 300);
           activeBtn = newActiveBtn;
         }
       }
